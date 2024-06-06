@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "456949087971",
+    "firebase_url": "https://moneypay-9d362-default-rtdb.firebaseio.com",
+    "project_id": "moneypay-9d362",
+    "storage_bucket": "moneypay-9d362.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:456949087971:android:b19fd8e30946d07e848fd6",
+        "android_client_info": {
+          "package_name": "com.example.electronicwalletmoneypay"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBEr2y8IenA2mDy1yRRy75VfzOkZBP-hA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

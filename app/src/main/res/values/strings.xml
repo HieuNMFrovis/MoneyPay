@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ElectronicWalletMoneyPay</string>
+    <string name="version">Version 1.0.1</string>
+    <string name="password">Mật Khẩu</string>
+    <string name="Email">Tài Khoản</string>
+    <string name="Signup">Đăng Ký</string>
+    <string name="Login">Đăng Nhập</string>
+    <string name="continue_with_zalo">Continue With Zalo</string>
+    <string name="continue_with_email">Continue With Email</string>
+</resources>
