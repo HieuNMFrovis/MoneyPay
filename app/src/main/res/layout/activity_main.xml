@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="@color/white"
+    >
 
     <LinearLayout
         android:id="@+id/LinearLayoutHomeTop"
@@ -15,7 +17,8 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        >
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,7 +28,8 @@
             android:fontFamily="@font/roboto"
             android:text="Số Dư Ví"
             android:textColor="@color/white"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            />
 
         <TextView
             android:layout_width="match_parent"
@@ -34,7 +38,8 @@
             android:layout_marginTop="10dp"
             android:text="100.000 Đ"
             android:textColor="@color/white"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -66,7 +71,8 @@
                     android:layout_marginEnd="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -77,14 +83,17 @@
                     android:textColor="@color/black"
                     app:layout_constraintStart_toStartOf="@id/card_1"
                     app:layout_constraintEnd_toEndOf="@id/card_1"
-                    app:layout_constraintTop_toBottomOf="@id/card_1" />
+                    app:layout_constraintTop_toBottomOf="@id/card_1"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="12dp">
+                android:layout_marginEnd="12dp"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/card_2"
@@ -98,7 +107,8 @@
                     android:layout_marginEnd="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -109,14 +119,17 @@
                     android:textColor="@color/black"
                     app:layout_constraintStart_toStartOf="@id/card_2"
                     app:layout_constraintEnd_toEndOf="@id/card_2"
-                    app:layout_constraintTop_toBottomOf="@id/card_2" />
+                    app:layout_constraintTop_toBottomOf="@id/card_2"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="12dp">
+                android:layout_marginEnd="12dp"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/card_3"
@@ -130,7 +143,8 @@
                     android:layout_marginEnd="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -141,14 +155,17 @@
                     android:textColor="@color/black"
                     app:layout_constraintStart_toStartOf="@id/card_3"
                     app:layout_constraintEnd_toEndOf="@id/card_3"
-                    app:layout_constraintTop_toBottomOf="@id/card_3" />
+                    app:layout_constraintTop_toBottomOf="@id/card_3"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
+
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:layout_marginTop="10dp"
-                android:layout_marginEnd="12dp">
+                android:layout_marginEnd="12dp"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/card_4"
@@ -162,7 +179,8 @@
                     android:layout_marginEnd="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -173,7 +191,8 @@
                     android:textColor="@color/black"
                     app:layout_constraintStart_toStartOf="@id/card_4"
                     app:layout_constraintEnd_toEndOf="@id/card_4"
-                    app:layout_constraintTop_toBottomOf="@id/card_4" />
+                    app:layout_constraintTop_toBottomOf="@id/card_4"
+                    />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </LinearLayout>
@@ -188,10 +207,11 @@
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/LinearLayoutHomeTop" />
+        app:layout_constraintTop_toBottomOf="@id/LinearLayoutHomeTop"
+        />
 
     <LinearLayout
         android:id="@+id/LayoutService"
@@ -203,7 +223,8 @@
         android:gravity="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TvService">
+        app:layout_constraintTop_toBottomOf="@+id/TvService"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -216,7 +237,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/CardService1"
@@ -228,7 +250,8 @@
                     android:src="@drawable/card_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
                     android:id="@+id/TextView1"
@@ -241,7 +264,8 @@
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/CardService1"
                     app:layout_constraintStart_toStartOf="@+id/CardService1"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService1" />
+                    app:layout_constraintTop_toBottomOf="@+id/CardService1"
+                    />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -250,7 +274,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/CardService2"
@@ -262,7 +287,8 @@
                     android:src="@drawable/card_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/TextView2"
@@ -275,7 +301,8 @@
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/CardService2"
                     app:layout_constraintStart_toStartOf="@+id/CardService2"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService2" />
+                    app:layout_constraintTop_toBottomOf="@+id/CardService2"
+                    />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -284,7 +311,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/CardService3"
@@ -296,7 +324,8 @@
                     android:src="@drawable/card_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/TextView3"
@@ -309,14 +338,16 @@
                     android:gravity="center"
                     app:layout_constraintEnd_toEndOf="@+id/CardService3"
                     app:layout_constraintStart_toStartOf="@+id/CardService3"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService3" />
+                    app:layout_constraintTop_toBottomOf="@+id/CardService3"
+                    />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/CardService4"
@@ -328,7 +359,8 @@
                     android:src="@drawable/card_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
                     android:id="@+id/TextView4"
@@ -341,10 +373,12 @@
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/CardService4"
                     app:layout_constraintStart_toStartOf="@+id/CardService4"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService4" />
+                    app:layout_constraintTop_toBottomOf="@+id/CardService4"
+                    />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -356,7 +390,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/CardService5"
@@ -368,7 +403,8 @@
                     android:src="@drawable/card_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
                     android:id="@+id/TextView5"
@@ -381,7 +417,8 @@
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/CardService5"
                     app:layout_constraintStart_toStartOf="@+id/CardService5"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService5" />
+                    app:layout_constraintTop_toBottomOf="@+id/CardService5"
+                    />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -390,7 +427,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/CardService6"
@@ -402,7 +440,8 @@
                     android:src="@drawable/card_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/TextView6"
@@ -415,7 +454,8 @@
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/CardService6"
                     app:layout_constraintStart_toStartOf="@+id/CardService6"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService6" />
+                    app:layout_constraintTop_toBottomOf="@+id/CardService6"
+                    />
 
 
             </androidx.constraintlayout.widget.ConstraintLayout>
@@ -424,7 +464,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/CardService7"
@@ -436,7 +477,8 @@
                     android:src="@drawable/card_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     android:id="@+id/TextView7"
@@ -449,14 +491,16 @@
                     android:gravity="center"
                     app:layout_constraintEnd_toEndOf="@+id/CardService7"
                     app:layout_constraintStart_toStartOf="@+id/CardService7"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService7" />
+                    app:layout_constraintTop_toBottomOf="@+id/CardService7"
+                    />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                >
 
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/CardService8"
@@ -468,7 +512,8 @@
                     android:src="@drawable/card_2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
                     android:id="@+id/TextView8"
@@ -481,19 +526,66 @@
                     android:textSize="14sp"
                     app:layout_constraintEnd_toEndOf="@+id/CardService8"
                     app:layout_constraintStart_toStartOf="@+id/CardService8"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService8" />
+                    app:layout_constraintTop_toBottomOf="@+id/CardService8"
+                    />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>
     </LinearLayout>
+
     <ViewFlipper
+        android:id="@+id/ViewFlipper"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/LayoutService"
+        ></ViewFlipper>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardBottom"
+        style="@style/CustomCardViewStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        app:cardElevation="6dp"
+        app:cardPreventCornerOverlap="false"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         >
 
-    </ViewFlipper>
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigator"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="@color/white"
+            app:labelVisibilityMode="labeled"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@color/MailColor"
+            app:itemTextColor="@color/MailColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:menu="@menu/bottom_nav_menu"
+            />
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:background="@color/MailColor"
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_scan"
+        android:tint="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/cardBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cardBottom"
+        app:maxImageSize="28dp"
+        tools:ignore="MissingConstraints"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

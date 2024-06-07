@@ -7,4 +7,8 @@
     <string name="Login">Đăng Nhập</string>
     <string name="continue_with_zalo">Continue With Zalo</string>
     <string name="continue_with_email">Continue With Email</string>
+    <string name="title_trang_chu">Trang chủ</string>
+    <string name="ltitle_ich_su">Lịch sử</string>
+    <string name="title_thong_bao">Thông Báo</string>
+    <string name="title_ca_nhan">Cá nhân</string>
 </resources>
