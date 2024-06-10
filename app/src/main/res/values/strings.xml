@@ -12,4 +12,13 @@
     <string name="title_thong_bao">Thông Báo</string>
     <string name="title_ca_nhan">Cá nhân</string>
     <string name="KM">Khuyến mãi</string>
+    <string name="text_time_notification">1 giờ trước</string>
+    <string name="text_notification">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</string>
+    <string name="text_transaction_history">Lịch Sử Giao Dịch</string>
+    <string name="text_filter">Bộ Lọc</string>
+    <string name="time_transaction_history">10:30</string>
+    <string name="item_transaction_history_time">Nội dung giao dịch</string>
+    <string name="date_transaction_history_time">10/06/2024</string>
+    <string name="transaction_history">+ 100.000</string>
+    <string name="user_name_transaction_history">User Name</string>
 </resources>
