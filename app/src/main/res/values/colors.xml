@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="MailColor">#635DFF</color>
     <color name="Gray">#C2C8D0</color>
+    <color name="color_gray2">#E1E1E1</color>
+    <color name="color_gray3">#888888</color>
 </resources>

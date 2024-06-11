@@ -21,4 +21,7 @@
     <string name="date_transaction_history_time">10/06/2024</string>
     <string name="transaction_history">+ 100.000</string>
     <string name="user_name_transaction_history">User Name</string>
+    <string name="Setting">Cài Đặt</string>
+    <string name="Language">Ngôn Ngữ</string>
+    <string name="Recharge">Nạp Tiền</string>
 </resources>
