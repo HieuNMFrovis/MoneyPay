@@ -24,4 +24,5 @@
     <string name="Setting">Cài Đặt</string>
     <string name="Language">Ngôn Ngữ</string>
     <string name="Recharge">Nạp Tiền</string>
+    <string name="Withdraw_Money">Rút Tiền</string>
 </resources>

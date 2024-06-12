@@ -7,7 +7,7 @@ import android.os.Handler
 import com.example.electronicwalletmoneypay.MainActivity
 import com.example.electronicwalletmoneypay.R
 
-class Splash : AppCompatActivity() {
+class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)

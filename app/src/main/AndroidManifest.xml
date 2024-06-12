@@ -5,7 +5,10 @@
     >
 
     <uses-permission android:name="android.permission.INTERNET" />
-
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true"/>
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,23 +21,27 @@
         tools:targetApi="31"
         >
         <activity
-            android:name=".presentation.Recharge"
+            android:name=".presentation.WithdrawMoneyActivity"
             android:exported="false"
             />
         <activity
-            android:name=".presentation.Language"
+            android:name=".presentation.RechargeActivity"
             android:exported="false"
             />
         <activity
-            android:name=".presentation.Setting"
+            android:name=".presentation.LanguageActivity"
             android:exported="false"
             />
         <activity
-            android:name=".presentation.SignUp"
+            android:name=".presentation.SettingActivity"
             android:exported="false"
             />
         <activity
-            android:name=".presentation.LogIn"
+            android:name=".presentation.SignUpActivity"
+            android:exported="false"
+            />
+        <activity
+            android:name=".presentation.LogInActivity"
             android:exported="false"
             />
         <activity
@@ -42,7 +49,7 @@
             android:exported="true"
             />
         <activity
-            android:name=".presentation.Splash"
+            android:name=".presentation.SplashActivity"
             android:exported="true"
             >
             <intent-filter>
