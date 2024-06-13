@@ -10,7 +10,7 @@
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/toolbar_withdrawmoney"
+        android:id="@+id/toolbar_withdraw_money"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/MailColor"
@@ -21,7 +21,7 @@
         >
 
         <androidx.appcompat.widget.AppCompatImageButton
-            android:id="@+id/back_withdrawmoney"
+            android:id="@+id/back_withdraw_money"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
@@ -40,7 +40,7 @@
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/back_withdrawmoney"
+            app:layout_constraintStart_toEndOf="@id/back_withdraw_money"
             app:layout_constraintTop_toTopOf="parent"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -55,7 +55,7 @@
         android:shadowColor="@color/color_gray2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/toolbar_withdrawmoney"
+        app:layout_constraintTop_toBottomOf="@id/toolbar_withdraw_money"
         >
 
         <ImageView

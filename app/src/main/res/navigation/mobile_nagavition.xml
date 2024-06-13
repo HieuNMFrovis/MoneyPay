@@ -4,30 +4,36 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_nagavition"
+    app:startDestination="@layout/activity_main"
     >
-    <fragment
+    <activity
         android:id="@+id/navigation_moneypay"
         android:label="Trang chủ"
+        android:name="com.example.electronicwalletmoneypay.MainActivity"
         tools:layout="@layout/activity_main"
         />
-    <fragment
+    <activity
         android:id="@+id/navigation_transactionhistory"
-        android:label="Trang chủ"
+        android:label="Lịch sử giao dịch"
+        android:name="com.example.electronicwalletmoneypay.presentation.TransactionHistoryActivity"
         tools:layout="@layout/activity_transaction_history"
         />
-    <fragment
+    <activity
         android:id="@+id/navigation_scanner"
-        android:label="Trang chủ"
+        android:label="Scanner"
+        android:name="com.example.electronicwalletmoneypay.presentation.ScannerActivity"
         tools:layout="@layout/activity_scanner"
         />
-    <fragment
+    <activity
         android:id="@+id/navigation_notifications"
-        android:label="Trang chủ"
+        android:label="Thông Báo"
+        android:name="com.example.electronicwalletmoneypay.presentation.NotificationActivity"
         tools:layout="@layout/activity_notification"
         />
-    <fragment
+    <activity
         android:id="@+id/navigation_profile"
-        android:label="Trang chủ"
+        android:label="Profile"
+        android:name="com.example.electronicwalletmoneypay.presentation.ProfileActivity"
         tools:layout="@layout/activity_profile"
         />
 
