@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.TransactionHistoryActivity"
+    tools:context=".presentation.TransactionHistoryFragment"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -58,10 +58,10 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="25dp"
             android:layout_marginTop="8dp"
-            app:layout_constraintTop_toTopOf="parent"
             android:background="@color/white"
             android:src="@drawable/ic_filter_list"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             />
 
         <TextView
@@ -74,7 +74,7 @@
             android:textColor="@color/MailColor"
             android:textSize="14sp"
             app:layout_constraintStart_toEndOf="@id/image_filter"
-           app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -84,60 +84,20 @@
         android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layout_filter"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/layout_filter"
         >
+
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            tools:listitem="@layout/item_transaction_history"
             tools:itemCount="20"
+            tools:listitem="@layout/item_transaction_history"
             />
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/cardBottom"
-        style="@style/CustomCardViewStyle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
-        app:cardElevation="6dp"
-        app:cardPreventCornerOverlap="false"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        >
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/bottomnavigation"
-            android:layout_width="match_parent"
-            android:layout_height="70dp"
-            android:background="@color/white"
-            app:itemIconTint="@color/MailColor"
-            app:itemRippleColor="@android:color/transparent"
-            app:itemTextColor="@color/MailColor"
-            app:labelVisibilityMode="labeled"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:menu="@menu/bottom_nav_menu"
-            />
-    </com.google.android.material.card.MaterialCardView>
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="50dp"
-        android:background="@color/MailColor"
-        android:importantForAccessibility="no"
-        android:src="@drawable/ic_scan"
-        android:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@id/cardBottom"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/cardBottom"
-        app:maxImageSize="28dp"
-        tools:ignore="MissingConstraints"
-        />
 </androidx.constraintlayout.widget.ConstraintLayout>

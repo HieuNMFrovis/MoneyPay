@@ -4,37 +4,37 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_nagavition"
-    app:startDestination="@layout/activity_main"
+    app:startDestination="@id/navigation_moneypay"
     >
-    <activity
+    <fragment
         android:id="@+id/navigation_moneypay"
         android:label="Trang chủ"
-        android:name="com.example.electronicwalletmoneypay.MainActivity"
-        tools:layout="@layout/activity_main"
+        android:name="com.example.electronicwalletmoneypay.presentation.HomeFragment"
+        tools:layout="@layout/fragment_home"
         />
-    <activity
+    <fragment
         android:id="@+id/navigation_transactionhistory"
         android:label="Lịch sử giao dịch"
-        android:name="com.example.electronicwalletmoneypay.presentation.TransactionHistoryActivity"
-        tools:layout="@layout/activity_transaction_history"
+        android:name="com.example.electronicwalletmoneypay.presentation.TransactionHistoryFragment"
+        tools:layout="@layout/fragment_transaction_history"
         />
-    <activity
+    <fragment
         android:id="@+id/navigation_scanner"
         android:label="Scanner"
-        android:name="com.example.electronicwalletmoneypay.presentation.ScannerActivity"
-        tools:layout="@layout/activity_scanner"
+        android:name="com.example.electronicwalletmoneypay.presentation.ScannerFragment"
+        tools:layout="@layout/fragment_scanner"
         />
-    <activity
+    <fragment
         android:id="@+id/navigation_notifications"
         android:label="Thông Báo"
-        android:name="com.example.electronicwalletmoneypay.presentation.NotificationActivity"
-        tools:layout="@layout/activity_notification"
+        android:name="com.example.electronicwalletmoneypay.presentation.NotificationFragment"
+        tools:layout="@layout/fragment_notification"
         />
-    <activity
+    <fragment
         android:id="@+id/navigation_profile"
         android:label="Profile"
-        android:name="com.example.electronicwalletmoneypay.presentation.ProfileActivity"
-        tools:layout="@layout/activity_profile"
+        android:name="com.example.electronicwalletmoneypay.presentation.ProfileFragment"
+        tools:layout="@layout/fragment_profile"
         />
 
 
