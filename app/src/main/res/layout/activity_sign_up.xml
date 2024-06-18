@@ -40,6 +40,7 @@
             app:boxStrokeColor="@color/black">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/EditTextTk"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
@@ -54,9 +55,12 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:hint="@string/password"
-            app:boxStrokeColor="@color/black">
+            app:boxStrokeColor="@color/black"
+            app:passwordToggleEnabled="true"
+            >
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/roboto"
@@ -76,6 +80,7 @@
         app:layout_constraintTop_toBottomOf="@id/LayoutSignUp">
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
@@ -95,6 +100,7 @@
             />
 
         <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/btn_login"

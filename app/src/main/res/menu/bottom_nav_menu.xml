@@ -14,7 +14,7 @@
     <item
         android:id="@+id/navigation_scanner"
         android:enabled="false"
-        android:title="Scan &amp; Pay" />
+        android:title="@string/scan_amp_pay" />
 
     <item
         android:id="@+id/navigation_notifications"
