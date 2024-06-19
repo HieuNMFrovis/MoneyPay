@@ -19,8 +19,8 @@
 
         <androidx.appcompat.widget.AppCompatImageButton
             android:id="@+id/back_language"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginStart="15dp"
             android:background="@color/MailColor"
             android:src="@drawable/ic_back"
@@ -40,6 +40,15 @@
             app:layout_constraintStart_toEndOf="@id/back_language"
             app:layout_constraintTop_toTopOf="parent"
             />
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/btn_accept_language"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_language_accept"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/constraint_layout_list_language"

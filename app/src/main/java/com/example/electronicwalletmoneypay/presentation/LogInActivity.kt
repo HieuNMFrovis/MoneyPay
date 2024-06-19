@@ -8,6 +8,8 @@ import com.example.electronicwalletmoneypay.MainActivity
 import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.databinding.ActivityLogInBinding
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
+import com.google.firebase.auth.FirebaseAuthInvalidUserException
 
 class LogInActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLogInBinding
@@ -30,11 +32,25 @@ class LogInActivity : AppCompatActivity() {
                         val intent = Intent(this, MainActivity::class.java)
                         startActivity(intent)
                     } else {
-                        Toast.makeText(this, it.exception.toString(), Toast.LENGTH_SHORT).show()
+                        handleSignInError(it.exception)
+
                     }
                 }
             } else {
-                Toast.makeText(this, "Empty Fields Are not Allowed !!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Không Được Để Trống !!", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+    private fun handleSignInError(exception: Exception?) {
+        when (exception) {
+            is FirebaseAuthInvalidUserException -> {
+                Toast.makeText(this, "Tài khoản không tồn tại. Vui lòng kiểm tra lại.", Toast.LENGTH_SHORT).show()
+            }
+            is FirebaseAuthInvalidCredentialsException -> {
+                Toast.makeText(this, "Mật khẩu không đúng. Vui lòng kiểm tra lại.", Toast.LENGTH_SHORT).show()
+            }
+            else -> {
+                Toast.makeText(this, "Đăng nhập thất bại: ${exception?.message}", Toast.LENGTH_SHORT).show()
             }
         }
     }

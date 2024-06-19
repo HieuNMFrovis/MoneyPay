@@ -8,5 +8,7 @@
     <color name="color_gray3">#888888</color>
     <color name="color_gray4">#F2F2F2</color>
     <color name="color_gray5">#C4C4C4</color>
+    <color name="color_gray6">#929292</color>
     <color name="color_red">#F90000</color>
+    <color name="color_selected">#F54D4D</color>
 </resources>
