@@ -1,6 +1,7 @@
 package com.example.electronicwalletmoneypay.presentation
 
 import android.annotation.SuppressLint
+import android.content.Context
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -9,65 +10,81 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.databinding.ItemLanguageBinding
 import com.example.electronicwalletmoneypay.presentation.LanguageEnum.*
+import com.example.electronicwalletmoneypay.widget.circle
 
 
-class LanguageAdapter(val onClickLanguageItem: (LanguageEnum) -> Unit, val currentLocate: String) :
-    RecyclerView.Adapter<LanguageAdapter.ViewHolder>() {
-    private val languageEnumData = values()
+class LanguageAdapter(
+    var context: Context,
+    val onItemClick: (LanguageEnum, Int) -> Unit,
+    private val languages: List<LanguageEnum>,
+    selectedLanguage: LanguageEnum?
+) : RecyclerView.Adapter<LanguageAdapter.ViewHolder>() {
+    var currentLanguage: LanguageEnum
 
-    private var currentIndex = -1
-    private var firstCheck = true
-
-    class ViewHolder(val binding: ItemLanguageBinding) : RecyclerView.ViewHolder(binding.root) {
-        companion object {
-            fun create(parent: ViewGroup): ViewHolder {
-                val binding = ItemLanguageBinding.inflate(
-                    LayoutInflater.from(parent.context), parent, false
-                )
-                return ViewHolder(binding)
-            }
-        }
-
-        fun bind(languageEnum: LanguageEnum) {
-            binding.apply {
-                languageTextItemTitle.setText(languageEnum.textId)
-                languageImageItem.setImageResource(languageEnum.imageId)
-            }
-        }
+    init {
+        currentLanguage = selectedLanguage ?: VietNam
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder.create(parent)
     }
-    override fun getItemCount(): Int = values().size
-    @SuppressLint("NotifyDataSetChanged")
-    override fun onBindViewHolder(holder: ViewHolder, @SuppressLint("RecyclerView") position: Int) {
-        val itemIndex = languageEnumData[position]
-        holder.bind(itemIndex)
-        holder.binding.root.setOnClickListener {
-            onClickLanguageItem(itemIndex)
-            currentIndex = position
-            notifyDataSetChanged()
+
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        val languageModel = languages[position]
+        holder.bind(languageModel, currentLanguage)
+        holder.binding.apply {
+            languageImageItem.setOnClickListener {
+                onItemClick(languageModel, position)
+            }
+        }
+    }
+
+    fun updateCurrentLanguage(languageModel: LanguageEnum, position: Int) {
+        // get old position
+        val oldPosition = languages.indexOf(currentLanguage)
+
+        if (oldPosition == position) {
+            return
         }
 
-        val newColorSelected = ContextCompat.getColor(
-            holder.binding.languageTextItemTitle.context, R.color.color_selected
-        )
-        val newColorUnSelect = ContextCompat.getColor(
-            holder.binding.languageTextItemTitle.context, R.color.color_gray6
-        )
+        currentLanguage = languageModel
+        notifyItemChanged(position)
+        if (oldPosition != -1) {
+            notifyItemChanged(oldPosition)
+        }
+    }
 
-        if (currentIndex == position || (itemIndex.locate == currentLocate && firstCheck)) {
-            holder.binding.languageTextItemTitle.setTextColor(newColorSelected)
-            holder.binding.languageIconRadio.setImageResource(R.drawable.ic_radio_selected)
-            holder.binding.root.isSelected = true
-            if (itemIndex.locate == currentLocate) {
-                firstCheck = false
+    override fun getItemCount(): Int = languages.size
+
+    class ViewHolder(
+        val binding: ItemLanguageBinding
+    ) : RecyclerView.ViewHolder(binding.root) {
+        companion object {
+            fun create(parent: ViewGroup): ViewHolder {
+                val binding = ItemLanguageBinding.inflate(
+                    LayoutInflater.from(parent.context),
+                    parent,
+                    false
+                )
+                return ViewHolder(binding)
             }
-        } else {
-            holder.binding.languageTextItemTitle.setTextColor(newColorUnSelect)
-            holder.binding.languageIconRadio.setImageResource(R.drawable.ic_radio_unselect)
-            holder.binding.root.isSelected = false
+        }
+
+        fun bind(language: LanguageEnum, currentLanguage: LanguageEnum) {
+            binding.apply {
+                val selected = language.code == currentLanguage.code
+                root.isSelected = selected
+                languageIconRadio.isSelected = selected
+                languageTextItemTitle.text = language.title
+                if (selected) {
+                    val selectedTextColor = binding.root.resources.getColor(R.color.white)
+                    languageTextItemTitle.setTextColor(selectedTextColor)
+                }  else {
+                    val unSelectedTextColor = binding.root.resources.getColor(R.color.color_gray3)
+                    languageTextItemTitle.setTextColor(unSelectedTextColor)
+                }
+                languageImageItem.circle(language.icon).into(languageImageItem)
+            }
         }
     }
 }

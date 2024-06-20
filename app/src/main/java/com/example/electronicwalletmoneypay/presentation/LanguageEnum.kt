@@ -2,11 +2,14 @@ package com.example.electronicwalletmoneypay.presentation
 
 import com.example.electronicwalletmoneypay.R
 
-enum class LanguageEnum(val locate: String, val textId: Int, val imageId: Int) {
-    Vietnam(
-        locate = "vi", textId = R.string.Language_vietnam, imageId = R.drawable.ic_language_vietnam
-    ),
-    English(
-        "en", textId = R.string.Language_english, imageId = R.drawable.ic_language_english
-    )
+enum class LanguageEnum(val title: String, val icon: Int, val code: String) {
+    ENGLISH("English", R.drawable.ic_language_english, "en"),
+    VietNam(
+        "VietNam", R.drawable.ic_language_vietnam, "vn"
+    );
+    companion object {
+        fun fromCode(code: String): LanguageEnum? {
+            return values().find { it.code == code }
+        }
+    }
 }

@@ -39,5 +39,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/language_text_item_title"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/ic_radio_unselect" />
+        app:srcCompat="@drawable/selector_rourd" />
 </androidx.constraintlayout.widget.ConstraintLayout>

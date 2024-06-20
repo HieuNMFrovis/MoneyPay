@@ -20,9 +20,6 @@ class MainActivity : AppCompatActivity() {
         val bottomNavigation: BottomNavigationView = binding.bottomNavigation
         val navController = findNavController(R.id.fragment)
         bottomNavigation.setupWithNavController(navController)
-//        binding.floatingActionButton.setOnClickListener {
-//
-//        }
 
     }
 
