@@ -24,7 +24,6 @@ class LanguageAdapter(
     init {
         currentLanguage = selectedLanguage ?: VietNam
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder.create(parent)
     }
@@ -40,7 +39,7 @@ class LanguageAdapter(
     }
 
     fun updateCurrentLanguage(languageModel: LanguageEnum, position: Int) {
-        // get old position
+
         val oldPosition = languages.indexOf(currentLanguage)
 
         if (oldPosition == position) {

@@ -16,6 +16,8 @@ import org.koin.android.ext.android.inject
 import timber.log.Timber
 import java.util.Locale
 
+
+
 class LanguageActivity : LocalizationActivity() {
     private lateinit var binding: ActivityLanguageBinding
     private lateinit var languageAdapter: LanguageAdapter
@@ -62,7 +64,7 @@ class LanguageActivity : LocalizationActivity() {
             handleClickDone()
         }
 
-        if (!fromSetting) {
+        if (fromSetting) {
             binding.backLanguage.visibility = android.view.View.INVISIBLE
         }
 
@@ -70,13 +72,13 @@ class LanguageActivity : LocalizationActivity() {
             finish()
         }
 
-        binding.btnAcceptLanguage.isVisible = !fromSetting
+        binding.btnAcceptLanguage.isVisible = fromSetting
 
     }
 
     private fun handleClickDone() {
         setLocale(languageAdapter.currentLanguage)
-        if (!fromSetting) {
+        if (fromSetting) {
             if (spref.isFirstOpenApp()) {
                 startActivity(Intent(this@LanguageActivity, MainActivity::class.java))
             } else {
@@ -96,4 +98,5 @@ class LanguageActivity : LocalizationActivity() {
             context.resources.configuration.locale
         }
     }
+
 }
