@@ -1,4 +1,4 @@
-package com.example.electronicwalletmoneypay.presentation
+package com.example.electronicwalletmoneypay.presentation.select_language
 
 
 import android.content.Context
@@ -24,7 +24,7 @@ class LanguageActivity : LocalizationActivity() {
     private lateinit var languages: MutableList<LanguageEnum>
 
     private val spref: AppPreferences by inject()
-    private var fromSetting: Boolean = false
+    private var fromSetting: Boolean = true
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLanguageBinding.inflate(layoutInflater)
@@ -52,7 +52,7 @@ class LanguageActivity : LocalizationActivity() {
         }
 
         languageAdapter = LanguageAdapter(
-            this, this::onLanguageChanged, languages, selectedLanguage ?: systemLanguage
+            this, this::onLanguageChanged, languages, selectedLanguage
         )
 
         binding.languageList.apply {

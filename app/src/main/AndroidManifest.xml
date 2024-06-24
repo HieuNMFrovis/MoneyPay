@@ -22,27 +22,27 @@
         tools:targetApi="31"
         >
         <activity
-            android:name=".presentation.WithdrawMoneyActivity"
+            android:name=".presentation.withdrawmoney.WithdrawMoneyActivity"
             android:exported="false"
             />
         <activity
-            android:name=".presentation.RechargeActivity"
+            android:name=".presentation.recharge.RechargeActivity"
             android:exported="false"
             />
         <activity
-            android:name=".presentation.LanguageActivity"
+            android:name=".presentation.select_language.LanguageActivity"
             android:exported="false"
             />
         <activity
-            android:name=".presentation.SettingActivity"
+            android:name=".presentation.setting.SettingActivity"
             android:exported="false"
             />
         <activity
-            android:name=".presentation.SignUpActivity"
+            android:name=".presentation.signup.SignUpActivity"
             android:exported="false"
             />
         <activity
-            android:name=".presentation.LogInActivity"
+            android:name=".presentation.login.LogInActivity"
             android:exported="false"
             />
         <activity
@@ -50,7 +50,7 @@
             android:exported="true"
             />
         <activity
-            android:name=".presentation.SplashActivity"
+            android:name=".presentation.splash.SplashActivity"
             android:exported="true"
             >
             <intent-filter>

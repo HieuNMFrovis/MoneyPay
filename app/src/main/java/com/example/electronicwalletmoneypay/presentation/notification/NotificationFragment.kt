@@ -1,4 +1,4 @@
-package com.example.electronicwalletmoneypay.presentation
+package com.example.electronicwalletmoneypay.presentation.notification
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

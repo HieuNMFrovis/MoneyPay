@@ -1,11 +1,11 @@
-package com.example.electronicwalletmoneypay.presentation
+package com.example.electronicwalletmoneypay.presentation.splash
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
-import com.example.electronicwalletmoneypay.MainActivity
 import com.example.electronicwalletmoneypay.R
+import com.example.electronicwalletmoneypay.presentation.login.LogInActivity
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

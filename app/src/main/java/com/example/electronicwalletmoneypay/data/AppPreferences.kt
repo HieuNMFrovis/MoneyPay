@@ -3,7 +3,7 @@ package com.example.electronicwalletmoneypay.data
 import android.content.Context
 import android.content.SharedPreferences
 import com.example.electronicwalletmoneypay.helper.JsonHelper
-import com.example.electronicwalletmoneypay.presentation.LanguageEnum
+import com.example.electronicwalletmoneypay.presentation.select_language.LanguageEnum
 import jp.takuji31.koreference.KoreferenceModel
 import jp.takuji31.koreference.booleanPreference
 import jp.takuji31.koreference.stringPreference

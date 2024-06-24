@@ -1,4 +1,4 @@
-package com.example.electronicwalletmoneypay.presentation
+package com.example.electronicwalletmoneypay.presentation.withdrawmoney
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

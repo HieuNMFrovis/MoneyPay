@@ -2,6 +2,7 @@ package com.example.electronicwalletmoneypay
 
 import android.app.Application
 import com.akexorcist.localizationactivity.BuildConfig
+import com.example.electronicwalletmoneypay.di.appPreferencesModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
 import org.koin.core.context.startKoin
@@ -18,7 +19,7 @@ class BaseApplication: Application() {
         startKoin {
             androidLogger()
             androidContext(androidContext = this@BaseApplication)
-
+            modules(appPreferencesModule)
         }
 
     }

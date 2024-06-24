@@ -1,12 +1,12 @@
-package com.example.electronicwalletmoneypay.presentation
+package com.example.electronicwalletmoneypay.presentation.login
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.electronicwalletmoneypay.MainActivity
-import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.databinding.ActivityLogInBinding
+import com.example.electronicwalletmoneypay.presentation.signup.SignUpActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
 import com.google.firebase.auth.FirebaseAuthInvalidUserException

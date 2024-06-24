@@ -9,31 +9,31 @@
     <fragment
         android:id="@+id/navigation_moneypay"
         android:label="Trang chủ"
-        android:name="com.example.electronicwalletmoneypay.presentation.HomeFragment"
+        android:name="com.example.electronicwalletmoneypay.presentation.home.HomeFragment"
         tools:layout="@layout/fragment_home"
         />
     <fragment
         android:id="@+id/navigation_transactionhistory"
         android:label="Lịch sử giao dịch"
-        android:name="com.example.electronicwalletmoneypay.presentation.TransactionHistoryFragment"
+        android:name="com.example.electronicwalletmoneypay.presentation.transactionhistory.TransactionHistoryFragment"
         tools:layout="@layout/fragment_transaction_history"
         />
     <fragment
         android:id="@+id/navigation_scanner"
         android:label="Scanner"
-        android:name="com.example.electronicwalletmoneypay.presentation.ScannerFragment"
+        android:name="com.example.electronicwalletmoneypay.presentation.scanner.ScannerFragment"
         tools:layout="@layout/fragment_scanner"
         />
     <fragment
         android:id="@+id/navigation_notifications"
         android:label="Thông Báo"
-        android:name="com.example.electronicwalletmoneypay.presentation.NotificationFragment"
+        android:name="com.example.electronicwalletmoneypay.presentation.notification.NotificationFragment"
         tools:layout="@layout/fragment_notification"
         />
     <fragment
         android:id="@+id/navigation_profile"
         android:label="Profile"
-        android:name="com.example.electronicwalletmoneypay.presentation.ProfileFragment"
+        android:name="com.example.electronicwalletmoneypay.presentation.profile.ProfileFragment"
         tools:layout="@layout/fragment_profile"
         />
 

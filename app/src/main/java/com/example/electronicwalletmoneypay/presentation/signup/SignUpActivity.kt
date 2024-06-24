@@ -1,12 +1,11 @@
-package com.example.electronicwalletmoneypay.presentation
+package com.example.electronicwalletmoneypay.presentation.signup
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.databinding.ActivitySignUpBinding
-import com.google.firebase.Firebase
+import com.example.electronicwalletmoneypay.presentation.login.LogInActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpActivity : AppCompatActivity() {

@@ -3,7 +3,7 @@ package com.example.electronicwalletmoneypay.widget
 import android.content.Context
 import android.content.res.Configuration
 import com.example.electronicwalletmoneypay.data.AppPreferences
-import com.example.electronicwalletmoneypay.presentation.LanguageEnum
+import com.example.electronicwalletmoneypay.presentation.select_language.LanguageEnum
 import java.util.Locale
 import org.koin.core.context.GlobalContext.get
 

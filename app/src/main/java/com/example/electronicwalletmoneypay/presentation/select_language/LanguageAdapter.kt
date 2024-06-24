@@ -1,15 +1,11 @@
-package com.example.electronicwalletmoneypay.presentation
+package com.example.electronicwalletmoneypay.presentation.select_language
 
-import android.annotation.SuppressLint
 import android.content.Context
-
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.databinding.ItemLanguageBinding
-import com.example.electronicwalletmoneypay.presentation.LanguageEnum.*
 import com.example.electronicwalletmoneypay.widget.circle
 
 
@@ -22,7 +18,7 @@ class LanguageAdapter(
     var currentLanguage: LanguageEnum
 
     init {
-        currentLanguage = selectedLanguage ?: VietNam
+        currentLanguage = selectedLanguage ?: LanguageEnum.ENGLISH
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         return ViewHolder.create(parent)
@@ -32,7 +28,8 @@ class LanguageAdapter(
         val languageModel = languages[position]
         holder.bind(languageModel, currentLanguage)
         holder.binding.apply {
-            languageImageItem.setOnClickListener {
+            languageIconRadio
+                .setOnClickListener {
                 onItemClick(languageModel, position)
             }
         }
@@ -45,7 +42,6 @@ class LanguageAdapter(
         if (oldPosition == position) {
             return
         }
-
         currentLanguage = languageModel
         notifyItemChanged(position)
         if (oldPosition != -1) {
@@ -76,7 +72,7 @@ class LanguageAdapter(
                 languageIconRadio.isSelected = selected
                 languageTextItemTitle.text = language.title
                 if (selected) {
-                    val selectedTextColor = binding.root.resources.getColor(R.color.white)
+                    val selectedTextColor = binding.root.resources.getColor(R.color.color_red)
                     languageTextItemTitle.setTextColor(selectedTextColor)
                 }  else {
                     val unSelectedTextColor = binding.root.resources.getColor(R.color.color_gray3)

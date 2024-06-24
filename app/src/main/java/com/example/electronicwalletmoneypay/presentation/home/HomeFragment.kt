@@ -1,4 +1,4 @@
-package com.example.electronicwalletmoneypay.presentation
+package com.example.electronicwalletmoneypay.presentation.home
 
 import android.content.Intent
 import android.os.Bundle
@@ -11,6 +11,8 @@ import android.widget.ImageView
 import com.bumptech.glide.Glide
 import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.databinding.FragmentHomeBinding
+import com.example.electronicwalletmoneypay.presentation.recharge.RechargeActivity
+import com.example.electronicwalletmoneypay.presentation.withdrawmoney.WithdrawMoneyActivity
 
 class HomeFragment : Fragment() {
 
