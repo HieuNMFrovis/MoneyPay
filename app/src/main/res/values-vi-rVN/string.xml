@@ -54,10 +54,18 @@
     <string name="thanh_toán_hóa_đơn">Thanh toán hóa đơn</string>
     <string name="thanh_toán_tiền_nước">Thanh toán tiền nước</string>
     <string name="thanh_toán_tiền_điện">thanh toán tiền điện</string>
-    <string name="nạp_thẻ_dt">Nạp Thẻ Điện Thoại</string>
+    <string name="nạp_thẻ_dt">Nạp thẻ điện thoại</string>
     <string name="thanh_toán_bảo_hiểm">Thanh toán bảo hiểm</string>
-    <string name="thanh_toán_truyền_hình">Thanh Toán Truyền Hình</string>
+    <string name="thanh_toán_truyền_hình">Thanh toán truyền hình</string>
     <string name="mua_ve_xem_phim">Mua vé xem phim</string>
     <string name="số_dư_ví">Số Dư Ví</string>
     <string name="nạp_tiền">Nạp Tiền</string>
+    <string name="user_name">Tên tài khoản</string>
+    <string name="google_gmail_com">google@gmail.com</string>
+    <string name="_0968888888">0968888888</string>
+    <string name="Profile">Hồ Sơ</string>
+    <string name="support_center">Trung tâm hỗ trợ</string>
+    <string name="introduce">Giới thiệu</string>
+    <string name="rate">Đánh Giá</string>
+    <string name="title_notification">Thông báo</string>
 </resources>

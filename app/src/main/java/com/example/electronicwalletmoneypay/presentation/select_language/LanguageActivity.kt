@@ -3,12 +3,16 @@ package com.example.electronicwalletmoneypay.presentation.select_language
 
 import android.content.Context
 import android.content.Intent
+import android.hardware.camera2.CameraAccessException
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.view.animation.AnimationUtils
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.akexorcist.localizationactivity.ui.LocalizationActivity
 import com.example.electronicwalletmoneypay.MainActivity
+import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.data.AppPreferences
 import com.example.electronicwalletmoneypay.databinding.ActivityLanguageBinding
 import com.example.electronicwalletmoneypay.widget.setLocale
@@ -30,7 +34,6 @@ class LanguageActivity : LocalizationActivity() {
         binding = ActivityLanguageBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setUpView()
-
     }
 
     private fun setUpView() {
@@ -73,6 +76,7 @@ class LanguageActivity : LocalizationActivity() {
         }
 
         binding.btnAcceptLanguage.isVisible = fromSetting
+        binding.backLanguage.isVisible = true
 
     }
 

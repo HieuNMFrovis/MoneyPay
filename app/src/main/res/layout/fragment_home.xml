@@ -50,13 +50,15 @@
             android:orientation="horizontal"
             >
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:id="@+id/layout_recharge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:orientation="vertical"
                 android:layout_marginEnd="12dp"
                 android:layout_weight="1"
+                android:gravity="center"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -81,18 +83,18 @@
                     android:text="@string/nạp_tiền"
                     android:textColor="@color/black"
                     android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@id/card_1"
-                    app:layout_constraintStart_toStartOf="@id/card_1"
-                    app:layout_constraintTop_toBottomOf="@id/card_1"
-                    />
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+                    />
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="12dp"
                 android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -117,18 +119,21 @@
                     android:text="@string/chuyển_tiền"
                     android:textColor="@color/black"
                     android:textSize="14sp"
+                    android:gravity="center"
                     app:layout_constraintEnd_toEndOf="@id/card_2"
                     app:layout_constraintStart_toStartOf="@id/card_2"
                     app:layout_constraintTop_toBottomOf="@id/card_2"
                     />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="12dp"
                 android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -153,19 +158,22 @@
                     android:text="@string/mã_qr"
                     android:textColor="@color/black"
                     android:textSize="14sp"
+                    android:gravity="center"
                     app:layout_constraintEnd_toEndOf="@id/card_3"
                     app:layout_constraintStart_toStartOf="@id/card_3"
                     app:layout_constraintTop_toBottomOf="@id/card_3"
                     />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:id="@+id/layout_withdraw_money"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="12dp"
                 android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -190,11 +198,12 @@
                     android:text="@string/rút_tiền"
                     android:textColor="@color/black"
                     android:textSize="14sp"
+                    android:gravity="center"
                     app:layout_constraintEnd_toEndOf="@id/card_4"
                     app:layout_constraintStart_toStartOf="@id/card_4"
                     app:layout_constraintTop_toBottomOf="@id/card_4"
                     />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
@@ -218,8 +227,6 @@
         android:id="@+id/LayoutService"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         android:gravity="center"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -228,17 +235,19 @@
         >
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
             >
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
+                android:gravity="center"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -250,33 +259,31 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/bank"
                     android:background="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+
                     />
 
                 <TextView
                     android:id="@+id/TextView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
                     android:text="@string/chuyển_tiền_ngân_hàng"
                     android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/CardService1"
-                    app:layout_constraintStart_toStartOf="@+id/CardService1"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService1"
                     />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_marginEnd="12dp"
+                android:gravity="center"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -286,35 +293,32 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="16dp"
-                    android:background="@color/white"
                     android:src="@drawable/ic_bill"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+                    android:background="@color/white"
+
                     />
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <TextView
                     android:id="@+id/TextView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
                     android:text="@string/thanh_toán_hóa_đơn"
                     android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/CardService2"
-                    app:layout_constraintStart_toStartOf="@+id/CardService2"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService2"
                     />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
+                android:gravity="center"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -324,33 +328,33 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/ic_droplets"
+                    android:src="@drawable/ic_light_bulb"
                     android:background="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+
                     />
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <TextView
                     android:id="@+id/TextView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/thanh_toán_tiền_nước"
+                    android:text="@string/thanh_toán_tiền_điện"
                     android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/CardService3"
-                    app:layout_constraintStart_toStartOf="@+id/CardService3"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService3"
                     />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            </LinearLayout>
+
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -360,42 +364,41 @@
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="4dp"
                     android:layout_marginEnd="16dp"
-                    android:src="@drawable/ic_light_bulb"
+                    android:src="@drawable/ic_droplets"
                     android:background="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+
                     />
 
                 <TextView
                     android:id="@+id/TextView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/thanh_toán_tiền_điện"
+                    android:text="@string/thanh_toán_tiền_nước"
                     android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/CardService4"
-                    app:layout_constraintStart_toStartOf="@+id/CardService4"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService4"
                     />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal"
             >
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
+                android:gravity="center"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -407,33 +410,31 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_phone"
                     android:background="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+
                     />
 
                 <TextView
                     android:id="@+id/TextView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
                     android:text="@string/nạp_thẻ_dt"
                     android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/CardService5"
-                    app:layout_constraintStart_toStartOf="@+id/CardService5"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService5"
                     />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
+                android:gravity="center"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -445,33 +446,31 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_umbrella"
                     android:background="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+
                     />
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <TextView
                     android:id="@+id/TextView6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
                     android:text="@string/thanh_toán_bảo_hiểm"
                     android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/CardService6"
-                    app:layout_constraintStart_toStartOf="@+id/CardService6"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService6"
                     />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="12dp"
+                android:gravity="center"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 >
 
                 <androidx.appcompat.widget.AppCompatImageButton
@@ -483,32 +482,32 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_television"
                     android:background="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+
                     />
 
-                <androidx.appcompat.widget.AppCompatTextView
+                <TextView
                     android:id="@+id/TextView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
                     android:text="@string/thanh_toán_truyền_hình"
                     android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/CardService7"
-                    app:layout_constraintStart_toStartOf="@+id/CardService7"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService7"
                     />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            </LinearLayout>
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:gravity="center"
                 android:layout_weight="1"
+                android:orientation="vertical"
                 >
+
                 <androidx.appcompat.widget.AppCompatImageButton
                     android:id="@+id/CardService8"
                     android:layout_width="42dp"
@@ -518,26 +517,22 @@
                     android:layout_marginEnd="16dp"
                     android:src="@drawable/ic_camera"
                     android:background="@color/white"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
+
                     />
 
                 <TextView
                     android:id="@+id/TextView8"
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
                     android:text="@string/mua_ve_xem_phim"
                     android:textSize="14sp"
-                    app:layout_constraintEnd_toEndOf="@+id/CardService8"
-                    app:layout_constraintStart_toStartOf="@+id/CardService8"
-                    app:layout_constraintTop_toBottomOf="@+id/CardService8"
                     />
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 
