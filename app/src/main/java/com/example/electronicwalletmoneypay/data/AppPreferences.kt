@@ -8,25 +8,25 @@ import jp.takuji31.koreference.KoreferenceModel
 import jp.takuji31.koreference.booleanPreference
 import jp.takuji31.koreference.stringPreference
 
-class AppPreferences private constructor(sharedPreferences: SharedPreferences) :
-    KoreferenceModel(sharedPreferences) {
-    constructor(context: Context) : this(
-        context.applicationContext.getSharedPreferences(
-            context.packageName, Context.MODE_PRIVATE
-        )
-    )
-    private var language: String by stringPreference(default = "")
-    private var firstOpenApp: Boolean by booleanPreference(default = false)
-    fun saveLanguage(language: LanguageEnum) {
-        this.language = JsonHelper.saveObject(language)
+class AppPreferences(context: Context) {
+
+    private val preferences: SharedPreferences = context.getSharedPreferences("app_prefs", Context.MODE_PRIVATE)
+
+    companion object {
+        private const val KEY_LANGUAGE = "language"
     }
 
     fun getLanguage(): LanguageEnum? {
-        return JsonHelper.getObject(
-            language, LanguageEnum::class.java
-        )
+        val languageCode = preferences.getString(KEY_LANGUAGE, null)
+        return languageCode?.let { LanguageEnum.fromCode(it) }
     }
+
+    fun setLanguage(language: LanguageEnum) {
+        preferences.edit().putString(KEY_LANGUAGE, language.code).apply()
+    }
+
     fun isFirstOpenApp(): Boolean {
-        return firstOpenApp
+        // Implement this function based on your requirement
+        return preferences.getBoolean("first_open", true)
     }
 }

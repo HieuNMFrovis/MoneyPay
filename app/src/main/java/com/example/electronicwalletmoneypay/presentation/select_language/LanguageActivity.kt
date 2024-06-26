@@ -3,19 +3,15 @@ package com.example.electronicwalletmoneypay.presentation.select_language
 
 import android.content.Context
 import android.content.Intent
-import android.hardware.camera2.CameraAccessException
 import android.os.Build
 import android.os.Bundle
-import android.os.Handler
-import android.view.animation.AnimationUtils
+import android.view.View
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.akexorcist.localizationactivity.ui.LocalizationActivity
 import com.example.electronicwalletmoneypay.MainActivity
-import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.data.AppPreferences
 import com.example.electronicwalletmoneypay.databinding.ActivityLanguageBinding
-import com.example.electronicwalletmoneypay.widget.setLocale
 import org.koin.android.ext.android.inject
 import timber.log.Timber
 import java.util.Locale
@@ -29,6 +25,7 @@ class LanguageActivity : LocalizationActivity() {
 
     private val spref: AppPreferences by inject()
     private var fromSetting: Boolean = true
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLanguageBinding.inflate(layoutInflater)
@@ -48,7 +45,6 @@ class LanguageActivity : LocalizationActivity() {
 
         if (selectedLanguage == null) {
             if (languages.map { it.code }.contains(locale?.language)) {
-
                 languages.remove(systemLanguage)
                 languages.add(0, systemLanguage!!)
             }
@@ -66,9 +62,8 @@ class LanguageActivity : LocalizationActivity() {
         binding.btnAcceptLanguage.setOnClickListener {
             handleClickDone()
         }
-
         if (fromSetting) {
-            binding.backLanguage.visibility = android.view.View.INVISIBLE
+            binding.backLanguage.visibility = View.INVISIBLE
         }
 
         binding.backLanguage.setOnClickListener {
@@ -77,7 +72,6 @@ class LanguageActivity : LocalizationActivity() {
 
         binding.btnAcceptLanguage.isVisible = fromSetting
         binding.backLanguage.isVisible = true
-
     }
 
     private fun handleClickDone() {
@@ -103,4 +97,19 @@ class LanguageActivity : LocalizationActivity() {
         }
     }
 
+    private fun setLocale(language: LanguageEnum) {
+        val locale = Locale(language.code)
+        Locale.setDefault(locale)
+        val config = resources.configuration
+        config.setLocale(locale)
+        resources.updateConfiguration(config, resources.displayMetrics)
+        spref.setLanguage(language)
+
+
+        val intent = Intent(this, LanguageActivity::class.java)
+        intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
+        startActivity(intent)
+        finish()
+    }
 }
+

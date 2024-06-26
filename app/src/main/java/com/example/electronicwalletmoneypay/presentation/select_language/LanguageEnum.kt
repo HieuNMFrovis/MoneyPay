@@ -4,7 +4,7 @@ import com.example.electronicwalletmoneypay.R
 
 enum class LanguageEnum(val title: String, val icon: Int, val code: String) {
     VietNam(
-        "VietNam", R.drawable.ic_language_vietnam, "vn"
+        "VietNam", R.drawable.ic_language_vietnam, "vi"
     ),
     ENGLISH("English", R.drawable.ic_language_english, "en");
     companion object {

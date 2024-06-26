@@ -10,7 +10,7 @@ import org.koin.core.context.GlobalContext.get
 
 fun Context.setLocale(language: LanguageEnum) {
     val spref = get().get<AppPreferences>()
-    spref.saveLanguage(language)
+//    spref.saveLanguage(language)
     changeLang(language)
 }
 
