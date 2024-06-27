@@ -2,6 +2,7 @@ package com.example.electronicwalletmoneypay.presentation.withdrawmoney
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.databinding.ActivitySettingBinding
 import com.example.electronicwalletmoneypay.databinding.ActivityWithdrawMoneyBinding
@@ -15,5 +16,6 @@ class WithdrawMoneyActivity : AppCompatActivity() {
         binding.backWithdrawMoney.setOnClickListener {
             finish()
         }
+
     }
 }

@@ -2,6 +2,7 @@ package com.example.electronicwalletmoneypay.presentation.recharge
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.InputType
 import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.databinding.ActivityRechargeBinding
 
@@ -14,5 +15,6 @@ class RechargeActivity : AppCompatActivity() {
         binding.backRecharge.setOnClickListener {
             finish()
         }
+
     }
 }

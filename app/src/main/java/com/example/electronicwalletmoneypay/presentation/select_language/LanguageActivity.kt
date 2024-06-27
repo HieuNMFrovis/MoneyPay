@@ -3,6 +3,7 @@ package com.example.electronicwalletmoneypay.presentation.select_language
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.os.Build
 import android.os.Bundle
 import android.view.View
@@ -100,9 +101,16 @@ class LanguageActivity : LocalizationActivity() {
     private fun setLocale(language: LanguageEnum) {
         val locale = Locale(language.code)
         Locale.setDefault(locale)
-        val config = resources.configuration
+
+        val config = Configuration(resources.configuration)
         config.setLocale(locale)
+        config.setLayoutDirection(locale)
+
+
+        val context = baseContext.createConfigurationContext(config)
         resources.updateConfiguration(config, resources.displayMetrics)
+
+
         spref.setLanguage(language)
 
 
@@ -111,5 +119,6 @@ class LanguageActivity : LocalizationActivity() {
         startActivity(intent)
         finish()
     }
+
 }
 
