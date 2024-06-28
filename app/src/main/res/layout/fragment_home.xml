@@ -25,7 +25,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/roboto"
-            android:text="@string/số_dư_ví"
+            android:text="@string/Wallet_Balance"
             android:textColor="@color/white"
             android:textSize="20sp"
             />
@@ -77,10 +77,11 @@
                     />
 
                 <TextView
+                    android:id="@+id/recharge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/nạp_tiền"
+                    android:text="@string/Recharge"
                     android:textColor="@color/black"
                     android:textSize="14sp"
 
@@ -116,7 +117,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/chuyển_tiền"
+                    android:text="@string/Transfer_money"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:gravity="center"
@@ -155,7 +156,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/mã_qr"
+                    android:text="@string/QR_code"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:gravity="center"
@@ -195,7 +196,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
-                    android:text="@string/rút_tiền"
+                    android:text="@string/Withdraw_money"
                     android:textColor="@color/black"
                     android:textSize="14sp"
                     android:gravity="center"
@@ -215,7 +216,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginEnd="16dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="@string/dịch_vụ"
+        android:text="@string/Service"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -269,7 +270,7 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/chuyển_tiền_ngân_hàng"
+                    android:text="@string/Transfer_money_in_bank"
                     android:textSize="14sp"
                     />
 
@@ -302,7 +303,7 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/thanh_toán_hóa_đơn"
+                    android:text="@string/Pay_the_bill"
                     android:textSize="14sp"
                     />
 
@@ -337,7 +338,7 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/thanh_toán_tiền_điện"
+                    android:text="@string/payment_of_electricity"
                     android:textSize="14sp"
                     />
 
@@ -373,7 +374,7 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/thanh_toán_tiền_nước"
+                    android:text="@string/Water_bill_payment"
                     android:textSize="14sp"
                     />
 
@@ -417,7 +418,7 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/nạp_thẻ_dt"
+                    android:text="@string/Phone_recharge_card"
                     android:textSize="14sp"
                     />
 
@@ -453,7 +454,7 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/thanh_toán_bảo_hiểm"
+                    android:text="@string/Payment_insurance"
                     android:textSize="14sp"
                     />
 
@@ -489,7 +490,7 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/thanh_toán_truyền_hình"
+                    android:text="@string/Television_payment"
                     android:textSize="14sp"
                     />
 
@@ -524,7 +525,7 @@
                     android:layout_marginTop="6dp"
                     android:fontFamily="@font/roboto"
                     android:gravity="center"
-                    android:text="@string/mua_ve_xem_phim"
+                    android:text="@string/Buy_movie_tickets"
                     android:textSize="14sp"
                     />
 
@@ -540,7 +541,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="10dp"
         android:fontFamily="@font/roboto"
-        android:text="@string/KM"
+        android:text="@string/Promotion"
         android:textColor="@color/black"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"

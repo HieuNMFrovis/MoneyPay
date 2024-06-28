@@ -63,5 +63,7 @@ class HomeFragment : Fragment() {
             val intent = Intent(requireContext(), WithdrawMoneyActivity::class.java)
             startActivity(intent)
         }
+
+        binding.recharge.text = context?.resources?.getString(R.string.Recharge)
     }
 }

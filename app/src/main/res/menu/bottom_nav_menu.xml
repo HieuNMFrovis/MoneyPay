@@ -4,12 +4,12 @@
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/icon_home"
-        android:title="@string/title_trang_chu" />
+        android:title="@string/title_home" />
 
     <item
         android:id="@+id/navigation_transactionhistory"
         android:icon="@drawable/ic_history"
-        android:title="@string/ltitle_ich_su" />
+        android:title="@string/title_history" />
 
     <item
         android:id="@+id/navigation_scanner"
@@ -19,10 +19,10 @@
     <item
         android:id="@+id/navigation_notifications"
         android:icon="@drawable/ic_notifications"
-        android:title="@string/title_thong_bao" />
+        android:title="@string/title_notification" />
 
     <item
         android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_profile"
-        android:title="@string/title_ca_nhan" />
+        android:title="@string/title_profile" />
 </menu>

@@ -3,6 +3,7 @@ package com.example.electronicwalletmoneypay.presentation.select_language
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.compose.ui.text.intl.Locale
 import androidx.recyclerview.widget.RecyclerView
 import com.example.electronicwalletmoneypay.R
 import com.example.electronicwalletmoneypay.databinding.ItemLanguageBinding
@@ -31,6 +32,7 @@ class LanguageAdapter(
             languageIconRadio
                 .setOnClickListener {
                 onItemClick(languageModel, position)
+
             }
         }
     }
@@ -79,7 +81,9 @@ class LanguageAdapter(
                     languageTextItemTitle.setTextColor(unSelectedTextColor)
                 }
                 languageImageItem.circle(language.icon).into(languageImageItem)
+
             }
         }
     }
+
 }
